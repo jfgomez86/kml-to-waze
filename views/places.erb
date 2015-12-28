@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading">Panel heading</div>
+  <div class="panel-heading">Permalink: <a href="<%= request.env["REQUEST_URI"] %>"><%= request.env["REQUEST_URI"] %></a></div>
 
   <table class="table">
     <thead>
@@ -13,9 +13,9 @@
     <tbody>
       <% @places.each do |place| %>
         <tr>
-          <td><%= place.name %></td>
-          <td><a href="<%= place.waze_url %>">Waze</a></td>
-          <td><a href="<%= place.google_maps_url %>">Google Maps</a></td>
+          <td><%= place[:name] %></td>
+          <td><a href="<%= place[:waze_url] %>">Waze</a></td>
+          <td><a href="<%= place[:google_maps_url] %>">Google Maps</a></td>
         </tr>
       <% end %>
     </tbody>
