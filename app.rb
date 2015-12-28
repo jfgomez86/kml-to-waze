@@ -9,5 +9,9 @@ helpers do
 end
 
 get '/' do
-  erb :index
+  erb :kml_form
+end
+
+post '/places' do
+  erb :places
 end
