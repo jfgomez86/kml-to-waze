@@ -1,24 +1,8 @@
-Hello!
+KML to Waze
 ====
 
-This is a demonstrator for [Sinatra](http://www.sinatrarb.com/) and [Twitter Bootstrap](http://getbootstrap.com/). 
+This is a simple app that lets you enter a url to a KML file (I use
+Dropbox to host the KML file) then lists the places with deep links to
+Waze and Google Maps.
 
-Use it as a boilerplate to start your own apps.
 
-Go!
-===
-
-Download and run sinatra-bootstrap:
-
-    git clone https://github.com/bootstrap-ruby/sinatra-bootstrap
-    
-    cd sinatra-bootstrap
-    bundle install             # To install sinatra
-    
-    bundle exec ruby app.rb    # To run the sample
-	
-Then open [http://localhost:4567/](http://localhost:4567/)
-
-What's next?
-============
-- Try the rerun gem to restart Sinatra automatically when you change source files: https://github.com/alexch/rerun
