@@ -8,8 +8,7 @@ class Place < Sequel::Model
   def parse_attributes(xmlplacemark)
     self[:name]             = xmlplacemark.css("name").text
     self[:coordinates]      = xmlplacemark.css("coordinates").text
-    self[:waze_url]         = "waze://?ll=#{coordinates}&navigate=yes"
-    self[:google_maps_url]  = "comgooglemaps://?daddr=#{coordinates}&directionsmode=driving"
+    self[:waze_url]         = "waze://?ll=#{self[:coordinates]}&navigate=yes"
+    self[:google_maps_url]  = "comgooglemaps://?daddr=#{self[:coordinates]}&directionsmode=driving"
   end
 end
-
